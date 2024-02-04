@@ -8,13 +8,14 @@
     tools:context=".MainActivity">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/layout_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="305dp"
+            android:layout_height="520dp"
             android:layout_gravity="center"
             android:gravity="center"
             android:orientation="vertical"
@@ -26,13 +27,21 @@
                 android:layout_height="100dp"
                 android:src="@drawable/qrcode_scan" />
 
-            <TextView
-                android:id="@+id/textResults"
-                android:layout_width="wrap_content"
+            <ScrollView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:textSize="26dp"
-                android:textStyle="bold" />
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/textResults"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="26dp"
+                    android:textStyle="bold" />
+
+            </ScrollView>
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -53,7 +62,7 @@
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/white"
+            android:backgroundTint="@color/cadmium_violet"
             android:contentDescription="DummyQrScanner"
             android:src="@drawable/qrcode_scan"
             app:layout_anchor="@+id/bottomAppBar"
