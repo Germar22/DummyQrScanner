@@ -39,7 +39,8 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:textSize="26dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:text="text goes here after scanning a qr code"/>
 
             </ScrollView>
 
@@ -51,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:backgroundTint="@color/cadmium_violet"
+        android:backgroundTint="@android:color/holo_blue_dark"
         app:fabCradleMargin="10dp"
         app:fabCradleRoundedCornerRadius="10dp"
         app:fabCradleVerticalOffset="10dp"
@@ -62,7 +63,7 @@
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/cadmium_violet"
+            android:backgroundTint="@android:color/holo_green_dark"
             android:contentDescription="DummyQrScanner"
             android:src="@drawable/qrcode_scan"
             app:layout_anchor="@+id/bottomAppBar"
