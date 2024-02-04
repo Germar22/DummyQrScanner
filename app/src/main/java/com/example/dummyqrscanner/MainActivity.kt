@@ -96,8 +96,16 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private fun initViews() {
         binding.fab.setOnClickListener {
             checkPermissionCamera(this)
+            stopTextToSpeech() // Stop text-to-speech when fab is clicked
         }
     }
+
+    private fun stopTextToSpeech() {
+        if (::textToSpeech.isInitialized && textToSpeech.isSpeaking) {
+            textToSpeech.stop()
+        }
+    }
+
 
     private fun checkPermissionCamera(context: Context) {
         if (ContextCompat.checkSelfPermission(
