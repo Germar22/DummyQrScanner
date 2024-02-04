@@ -14,6 +14,7 @@ import com.example.dummyqrscanner.databinding.ActivityMainBinding
 import com.journeyapps.barcodescanner.ScanContract
 import com.journeyapps.barcodescanner.ScanIntentResult
 import com.journeyapps.barcodescanner.ScanOptions
+import java.util.*
 
 class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
@@ -76,7 +77,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     override fun onInit(status: Int) {
         if (status == TextToSpeech.SUCCESS) {
-            val result = textToSpeech.setLanguage(java.util.Locale.getDefault())
+            val result = textToSpeech.setLanguage(Locale.getDefault())
             if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                 Toast.makeText(this, "Language not supported", Toast.LENGTH_SHORT).show()
             }
@@ -105,7 +106,6 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             textToSpeech.stop()
         }
     }
-
 
     private fun checkPermissionCamera(context: Context) {
         if (ContextCompat.checkSelfPermission(

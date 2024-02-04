@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:background="@color/white"
+        android:background="@android:color/holo_green_dark"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -22,10 +22,13 @@
             tools:layout_editor_absoluteX="155dp"
             tools:layout_editor_absoluteY="290dp">
 
+
+
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/qrcode_scan" />
+
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -63,7 +66,7 @@
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/holo_green_dark"
+            android:backgroundTint="@android:color/holo_blue_dark"
             android:contentDescription="DummyQrScanner"
             android:src="@drawable/qrcode_scan"
             app:layout_anchor="@+id/bottomAppBar"
