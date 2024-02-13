@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "DummyQrScanner"
 include(":app")
+include(":mylibrary")
