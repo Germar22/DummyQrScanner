@@ -3,9 +3,10 @@ package com.example.dummyqrscanner
 import android.content.Context
 import android.content.pm.PackageManager
 import android.os.Build
-import android.os.Bundle
 import android.os.Build.VERSION_CODES.LOLLIPOP
+import android.os.Bundle
 import android.speech.tts.TextToSpeech
+import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             } else {
                 setResult(result.contents)
                 speakText(result.contents)
+                binding.ImageView.visibility = View.GONE // Hide the ImageView
             }
         }
 
@@ -126,4 +128,3 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         setContentView(binding.root)
     }
 }
-

@@ -25,6 +25,7 @@
 
 
             <ImageView
+                android:id="@+id/ImageView"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/qrlogo"/>
@@ -55,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:backgroundTint="@android:color/holo_green_light"
+        android:backgroundTint="@android:color/holo_green_dark"
         app:fabCradleMargin="10dp"
         app:fabCradleRoundedCornerRadius="10dp"
         app:fabCradleVerticalOffset="10dp"
@@ -66,7 +67,7 @@
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/holo_green_light"
+            android:backgroundTint="@android:color/holo_green_dark"
             android:contentDescription="DummyQrScanner"
             android:src="@drawable/qrlogo"
             app:layout_anchor="@+id/bottomAppBar"
