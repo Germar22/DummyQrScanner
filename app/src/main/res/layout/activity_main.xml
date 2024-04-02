@@ -23,12 +23,11 @@
             tools:layout_editor_absoluteY="290dp">
 
 
-
             <ImageView
                 android:id="@+id/ImageView"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/qrlogo"/>
+                android:src="@drawable/qrlogo" />
 
 
             <ScrollView
@@ -42,26 +41,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="26dp"
                     android:textStyle="bold"
-                    android:text="text goes here after scanning a qr code"/>
+                    android:text="   Scan Qr Code!"
+                    android:textSize="40dp"/>
 
             </ScrollView>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/down"
+                android:translationY="150dp" />
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
+
         <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottomAppBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:backgroundTint="@android:color/holo_green_dark"
-        app:fabCradleMargin="10dp"
-        app:fabCradleRoundedCornerRadius="10dp"
-        app:fabCradleVerticalOffset="10dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="677dp" />
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@android:color/holo_green_dark"
+            app:fabCradleMargin="10dp"
+            app:fabCradleRoundedCornerRadius="10dp"
+            app:fabCradleVerticalOffset="10dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="677dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"

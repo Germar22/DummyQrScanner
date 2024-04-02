@@ -79,5 +79,7 @@ dependencies {
     implementation("com.google.zxing:core:3.4.1")
     implementation ("androidx.core:core-ktx:1.7.0")
     implementation("androidx.compose.ui:ui-tooling-preview:1.6.1")
+    implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.28")
+    implementation ("com.airbnb.android:lottie:4.0.0")
 
 }

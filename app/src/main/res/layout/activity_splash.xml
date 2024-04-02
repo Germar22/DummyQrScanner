@@ -21,7 +21,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="267dp"
-        android:text="LGU-GSC Audio Tour App"
+        android:text="LGU-GSC Audio Tour"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="30dp" />
